@@ -1,0 +1,244 @@
+/* body style */
+
+
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  background-color: rgb(242, 239, 243);
+  cursor: pointer;
+  padding: 0.5rem;
+  /* border-radius: 1px; */
+  transition: all 0.3s ease-in-out;
+  border-radius: 20%;
+
+}
+
+select {
+  appearance: none;
+  outline: black;
+  background-color: rgb(242, 239, 243);
+  padding: 0.5rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 20%;
+  margin-right: 0.3rem;
+  cursor: pointer;
+  color: #0E141B;
+  border-color: black;
+}
+
+.mb {
+  margin-bottom: 1rem;
+}
+
+/* End body Styles */
+
+/* main container start */
+
+.main-container {
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+/* main container end  */
+
+
+/* clock container start */
+
+.clock-container {
+  padding: 2rem;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: pink;X`X
+}
+
+/* main container end  */
+
+.current-time {
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
+  color: black;
+  background-color: wheat;
+  border-radius: 50%;
+
+}
+
+.alarm-form {
+  justify-content: space-between;
+  width: 100%;
+}
+
+.submit-button {
+  border-color: black;
+  border: 10px;
+  /* border-radius: 2rem; */
+  font-weight: bold;
+  border-radius: 10%;
+
+
+}
+
+.set-alarm-container {
+  width: 100%;
+}
+
+.set-alarm-container .set-alarm-container-title {
+  color: black;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.alarm {
+  justify-content: space-between;
+  border-radius: 30px;
+  padding: 0.5rem 1rem;
+  align-items: center;
+
+}
+
+.alarm .delete-alarm {
+  /* border-radius: 2rem; */
+  background-color: rgba(21, 5, 5, 0.918);
+  font-weight: bold;
+  color: #fff;
+  font-size: xx-medium;
+  border-radius: 10%;
+
+}
+
+.time {
+  color: #0E141B;
+  font-size: 1rem;
+  font-weight: bold;
+  align-items: center;
+  text-align: center;
+}
+
+
+.page-title {
+  /* background-color: #a7aaac; */
+  align-items: center;
+  text-align: center;
+  color: black;
+}
+
+/* CURRENT TIME */
+#ctime {
+  background: #a5cd22;
+}
+
+#ctime .header {
+  color: #ee8282;
+}
+
+#ctime .text {
+  color: #ddd;
+}
+
+/* TIME PICKER */
+#tpick {
+  background: #f2f2f2;
+}
+
+#tset,
+#treset {
+  width: 50%;
+  background: #afd773;
+  color: #fff;
+  border: 0;
+  padding: 15px 0;
+  cursor: text;
+  font-size: 18px;
+}
+
+#tset:disabled,
+#treset:disabled {
+  background: #aaa;
+  color: #888;
+}
+
+@media only screen and (min-width:100px) {
+  .main-container {
+    padding-block: 2rem;
+  }
+
+  .clock-container {
+    justify-content: center;
+    display: inline;
+    border-radius: 15px;
+    width: 350px;
+    min-height: auto;
+  }
+}
+
+/* SHARED */
+#ctime *,
+#tpick * {
+  font-family: Verdana, Tahoma, sans-serif;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#ctime,
+#tpick,
+.square {
+  padding: 10px;
+}
+
+#ctime,
+#tpick {
+  margin: 0 auto;
+  max-width: 350px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header {
+  font-weight: lighter;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.square,
+#tpick-h,
+#tpick-m,
+#tpick-s {
+  width: 33%;
+}
+
+.text,
+#tset,
+#treset {
+  margin-top: 10px;
+}
+
+.digits,
+.square select {
+  font-size: 24px;
+  background: #fff;
+  color: #ea9393;
+  border: 0;
+  border-radius: 5px;
+  width: 100%;
+  padding: 10px 0;
+}
